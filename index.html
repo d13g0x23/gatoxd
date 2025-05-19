@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Confía en mí</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f0f0f0;
+    }
+
+    #gato-container {
+      display: none;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .frase {
+      font-size: 24px;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #6c5ce7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5a4bcf;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="mostrarGato()">Confía en mí</button>
+
+  <div id="gato-container">
+    <img src="https://placekitten.com/400/300" alt="Gatito">
+    <div class="frase">Ramo se pasa solo</div>
+  </div>
+
+  <script>
+    function mostrarGato() {
+      document.getElementById("gato-container").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
